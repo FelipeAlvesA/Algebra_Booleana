@@ -1,0 +1,1209 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="3.8.0" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v3.8.0(https://github.com/logisim-evolution/).
+
+  <lib desc="#Wiring" name="0">
+    <tool name="Pin">
+      <a name="appearance" val="classic"/>
+    </tool>
+  </lib>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#Memory" name="4"/>
+  <lib desc="#I/O" name="5"/>
+  <lib desc="#TTL" name="6"/>
+  <lib desc="#TCL" name="7"/>
+  <lib desc="#Base" name="8"/>
+  <lib desc="#BFH-Praktika" name="9"/>
+  <lib desc="#Input/Output-Extra" name="10"/>
+  <lib desc="#Soc" name="11"/>
+  <main name="main"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="8" map="Button2" name="Poke Tool"/>
+    <tool lib="8" map="Button3" name="Menu Tool"/>
+    <tool lib="8" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="8" name="Poke Tool"/>
+    <tool lib="8" name="Edit Tool"/>
+    <tool lib="8" name="Wiring Tool"/>
+    <tool lib="8" name="Text Tool"/>
+    <sep/>
+    <tool lib="0" name="Pin"/>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+    </tool>
+    <sep/>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+    <tool lib="1" name="XOR Gate"/>
+    <tool lib="1" name="NAND Gate"/>
+    <tool lib="1" name="NOR Gate"/>
+    <sep/>
+    <tool lib="4" name="D Flip-Flop"/>
+    <tool lib="4" name="Register"/>
+  </toolbar>
+  <circuit name="main">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="main"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="clabelfont" val="Helvetica plain 14"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <appear>
+      <rect fill="none" height="100" stroke="#000000" width="80" x="50" y="50"/>
+      <circ-anchor facing="east" x="130" y="80"/>
+      <circ-port dir="in" pin="240,110" x="110" y="50"/>
+      <circ-port dir="in" pin="240,140" x="70" y="50"/>
+      <circ-port dir="in" pin="240,200" x="50" y="70"/>
+      <circ-port dir="out" pin="300,360" x="90" y="150"/>
+      <circ-port dir="out" pin="360,180" x="130" y="60"/>
+      <circ-port dir="out" pin="360,200" x="130" y="70"/>
+      <circ-port dir="out" pin="360,220" x="130" y="90"/>
+      <circ-port dir="out" pin="360,240" x="130" y="100"/>
+      <circ-port dir="out" pin="360,260" x="130" y="110"/>
+      <circ-port dir="out" pin="360,280" x="130" y="120"/>
+      <circ-port dir="out" pin="360,300" x="130" y="130"/>
+      <circ-port dir="out" pin="360,320" x="130" y="140"/>
+    </appear>
+    <comp lib="0" loc="(240,110)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="B"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(240,140)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="A"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(240,200)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="OP"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+    </comp>
+    <comp lib="0" loc="(300,360)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="R"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="output" val="true"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(360,180)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="o1"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(360,200)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="o2"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(360,220)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="c0"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(360,240)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="c1"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(360,260)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="c2"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(360,280)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="c3"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(360,300)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="c4"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(360,320)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="c5"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="8" loc="(122,215)" name="Text">
+      <a name="font" val="Helvetica plain 16"/>
+      <a name="text" val="OP: 1 -&gt; R = A - B"/>
+    </comp>
+    <comp lib="8" loc="(124,195)" name="Text">
+      <a name="font" val="Helvetica plain 16"/>
+      <a name="text" val="OP: 0 -&gt; R = A + B"/>
+    </comp>
+    <comp lib="8" loc="(152,40)" name="Text">
+      <a name="font" val="Helvetica plain 16"/>
+      <a name="text" val="Convenção:"/>
+    </comp>
+    <comp lib="8" loc="(169,420)" name="Text">
+      <a name="font" val="Helvetica plain 16"/>
+      <a name="text" val="Integrantes (Nome : Número USP)"/>
+    </comp>
+    <comp lib="8" loc="(178,440)" name="Text">
+      <a name="font" val="Helvetica plain 16"/>
+      <a name="text" val="- Gabriel Freire Ushijima : 15453282"/>
+    </comp>
+    <comp lib="8" loc="(193,460)" name="Text">
+      <a name="font" val="Helvetica plain 16"/>
+      <a name="text" val="- Renzo Real Machado Filho : 15486907"/>
+    </comp>
+    <comp lib="8" loc="(195,480)" name="Text">
+      <a name="font" val="Helvetica plain 16"/>
+      <a name="text" val="- Antônio Felipe Alves Araújo : 15584024"/>
+    </comp>
+    <comp lib="8" loc="(236,40)" name="Text">
+      <a name="color" val="#ff7024"/>
+      <a name="font" val="Helvetica plain 16"/>
+      <a name="text" val="Big Endian"/>
+    </comp>
+    <comp lib="8" loc="(237,60)" name="Text">
+      <a name="font" val="Helvetica plain 16"/>
+      <a name="text" val="Dígito mais significativo à esquerda."/>
+    </comp>
+    <comp lib="8" loc="(420,265)" name="Text">
+      <a name="font" val="Helvetica plain 14"/>
+      <a name="text" val="A == B"/>
+    </comp>
+    <comp lib="8" loc="(420,285)" name="Text">
+      <a name="font" val="Helvetica plain 14"/>
+      <a name="text" val="A == 0"/>
+    </comp>
+    <comp lib="8" loc="(455,245)" name="Text">
+      <a name="font" val="Helvetica plain 14"/>
+      <a name="text" val="A &lt; B (Sem Sinal)"/>
+    </comp>
+    <comp lib="8" loc="(456,225)" name="Text">
+      <a name="font" val="Helvetica plain 14"/>
+      <a name="text" val="A &gt; B (Sem Sinal)"/>
+    </comp>
+    <comp lib="8" loc="(466,185)" name="Text">
+      <a name="font" val="Helvetica plain 14"/>
+      <a name="text" val="Overflow (Sem Sinal)"/>
+    </comp>
+    <comp lib="8" loc="(485,305)" name="Text">
+      <a name="font" val="Helvetica plain 14"/>
+      <a name="text" val="A &gt; B (Complemento de 2)"/>
+    </comp>
+    <comp lib="8" loc="(485,325)" name="Text">
+      <a name="font" val="Helvetica plain 14"/>
+      <a name="text" val="A &lt; B (Complemento de 2)"/>
+    </comp>
+    <comp lib="8" loc="(494,205)" name="Text">
+      <a name="font" val="Helvetica plain 14"/>
+      <a name="text" val="Overflow (Complemento de 2)"/>
+    </comp>
+    <comp loc="(350,220)" name="ULA"/>
+    <wire from="(240,110)" to="(330,110)"/>
+    <wire from="(240,140)" to="(290,140)"/>
+    <wire from="(240,200)" to="(270,200)"/>
+    <wire from="(290,140)" to="(290,170)"/>
+    <wire from="(300,360)" to="(310,360)"/>
+    <wire from="(310,330)" to="(310,360)"/>
+    <wire from="(330,110)" to="(330,170)"/>
+    <wire from="(350,180)" to="(360,180)"/>
+    <wire from="(350,200)" to="(360,200)"/>
+    <wire from="(350,220)" to="(360,220)"/>
+    <wire from="(350,240)" to="(360,240)"/>
+    <wire from="(350,260)" to="(360,260)"/>
+    <wire from="(350,280)" to="(360,280)"/>
+    <wire from="(350,300)" to="(360,300)"/>
+    <wire from="(350,320)" to="(360,320)"/>
+  </circuit>
+  <circuit name="ULA">
+    <a name="appearance" val="custom"/>
+    <a name="circuit" val="ULA"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <appear>
+      <rect fill="#404040" height="160" stroke="#000000" width="80" x="50" y="50"/>
+      <text dominant-baseline="central" fill="#c0c0c0" font-family="Helvetica" font-size="14" text-anchor="middle" x="88" y="86">ULA</text>
+      <circ-anchor facing="east" x="130" y="100"/>
+      <circ-port dir="in" pin="160,180" x="110" y="50"/>
+      <circ-port dir="in" pin="160,210" x="70" y="50"/>
+      <circ-port dir="in" pin="190,250" x="50" y="80"/>
+      <circ-port dir="out" pin="230,300" x="90" y="210"/>
+      <circ-port dir="out" pin="280,110" x="130" y="160"/>
+      <circ-port dir="out" pin="280,130" x="130" y="180"/>
+      <circ-port dir="out" pin="280,150" x="130" y="200"/>
+      <circ-port dir="out" pin="280,50" x="130" y="100"/>
+      <circ-port dir="out" pin="280,70" x="130" y="120"/>
+      <circ-port dir="out" pin="280,90" x="130" y="140"/>
+      <circ-port dir="out" pin="290,240" x="130" y="60"/>
+      <circ-port dir="out" pin="290,260" x="130" y="80"/>
+    </appear>
+    <comp lib="0" loc="(160,180)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="B"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(160,210)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="A"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(190,250)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="OP"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+    </comp>
+    <comp lib="0" loc="(230,300)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="R"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="output" val="true"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(280,110)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="c3"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(280,130)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="c4"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(280,150)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="c5"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(280,50)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="c0"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(280,70)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="c1"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(280,90)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="c2"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(290,240)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="o1"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(290,260)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="o2"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp loc="(270,50)" name="comp"/>
+    <comp loc="(280,250)" name="addition_subtraction"/>
+    <wire from="(160,180)" to="(200,180)"/>
+    <wire from="(160,210)" to="(180,210)"/>
+    <wire from="(180,210)" to="(220,210)"/>
+    <wire from="(180,50)" to="(180,210)"/>
+    <wire from="(180,50)" to="(210,50)"/>
+    <wire from="(190,250)" to="(200,250)"/>
+    <wire from="(200,180)" to="(260,180)"/>
+    <wire from="(200,70)" to="(200,180)"/>
+    <wire from="(200,70)" to="(210,70)"/>
+    <wire from="(220,210)" to="(220,230)"/>
+    <wire from="(230,300)" to="(240,300)"/>
+    <wire from="(240,270)" to="(240,300)"/>
+    <wire from="(260,180)" to="(260,230)"/>
+    <wire from="(270,110)" to="(280,110)"/>
+    <wire from="(270,130)" to="(280,130)"/>
+    <wire from="(270,150)" to="(280,150)"/>
+    <wire from="(270,50)" to="(280,50)"/>
+    <wire from="(270,70)" to="(280,70)"/>
+    <wire from="(270,90)" to="(280,90)"/>
+    <wire from="(280,240)" to="(290,240)"/>
+    <wire from="(280,260)" to="(290,260)"/>
+  </circuit>
+  <circuit name="addition_subtraction">
+    <a name="appearance" val="custom"/>
+    <a name="circuit" val="addition_subtraction"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <appear>
+      <rect fill="#a0a0a0" height="40" stroke="#000000" width="80" x="40" y="40"/>
+      <text dominant-baseline="central" font-family="Helvetica" font-size="12" text-anchor="middle" x="82" y="53">Addition /</text>
+      <text dominant-baseline="central" font-family="Helvetica" font-size="12" text-anchor="middle" x="82" y="66">Subtraction</text>
+      <circ-anchor facing="east" x="120" y="60"/>
+      <circ-port dir="in" pin="150,180" x="40" y="60"/>
+      <circ-port dir="in" pin="260,70" x="100" y="40"/>
+      <circ-port dir="in" pin="300,130" x="60" y="40"/>
+      <circ-port dir="out" pin="320,220" x="80" y="80"/>
+      <circ-port dir="out" pin="440,180" x="120" y="70"/>
+      <circ-port dir="out" pin="440,240" x="120" y="50"/>
+    </appear>
+    <comp lib="0" loc="(150,180)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="OP"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+    </comp>
+    <comp lib="0" loc="(250,90)" name="Splitter">
+      <a name="appear" val="right"/>
+      <a name="facing" val="south"/>
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
+    </comp>
+    <comp lib="0" loc="(260,70)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="B"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(300,130)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="A"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(320,220)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="R"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="output" val="true"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(440,180)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="o2"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(440,240)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="o1"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="1" loc="(320,80)" name="XOR Gate">
+      <a name="size" val="30"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="1" loc="(430,180)" name="XOR Gate">
+      <a name="size" val="30"/>
+    </comp>
+    <comp lib="1" loc="(430,240)" name="XOR Gate">
+      <a name="size" val="30"/>
+    </comp>
+    <comp lib="8" loc="(117,366)" name="Text">
+      <a name="font" val="Helvetica plain 16"/>
+      <a name="text" val="- o1 = (OP ⊻ c8)"/>
+      <a name="valign" val="top"/>
+    </comp>
+    <comp lib="8" loc="(140,344)" name="Text">
+      <a name="font" val="Helvetica plain 20"/>
+      <a name="text" val="≡"/>
+      <a name="valign" val="top"/>
+    </comp>
+    <comp lib="8" loc="(142,288)" name="Text">
+      <a name="font" val="Helvetica plain 16"/>
+      <a name="text" val="Overflow 1 (Sem Sinal)"/>
+      <a name="valign" val="top"/>
+    </comp>
+    <comp lib="8" loc="(154,306)" name="Text">
+      <a name="font" val="Helvetica plain 16"/>
+      <a name="text" val="- o1 = (c8 == 1) se OP == 0"/>
+      <a name="valign" val="top"/>
+    </comp>
+    <comp lib="8" loc="(154,326)" name="Text">
+      <a name="font" val="Helvetica plain 16"/>
+      <a name="text" val="- o1 = (c8 == 0) se OP == 1"/>
+      <a name="valign" val="top"/>
+    </comp>
+    <comp lib="8" loc="(270,155)" name="Text">
+      <a name="font" val="Helvetica plain 16"/>
+      <a name="text" val="c0 = OP"/>
+      <a name="valign" val="top"/>
+    </comp>
+    <comp lib="8" loc="(284,28)" name="Text">
+      <a name="font" val="Helvetica plain 16"/>
+      <a name="text" val="Inverte os bits de B, se OP = 1"/>
+      <a name="valign" val="top"/>
+    </comp>
+    <comp lib="8" loc="(363,346)" name="Text">
+      <a name="font" val="Helvetica plain 16"/>
+      <a name="text" val="- o2 = (c7 ⊻ c8)"/>
+      <a name="valign" val="top"/>
+    </comp>
+    <comp lib="8" loc="(375,324)" name="Text">
+      <a name="font" val="Helvetica plain 20"/>
+      <a name="text" val="≡"/>
+      <a name="valign" val="top"/>
+    </comp>
+    <comp lib="8" loc="(412,306)" name="Text">
+      <a name="font" val="Helvetica plain 16"/>
+      <a name="text" val="- o2 = (c7 ∧ ¬c8) ∨ (¬c7 ∧ c8)"/>
+      <a name="valign" val="top"/>
+    </comp>
+    <comp lib="8" loc="(422,288)" name="Text">
+      <a name="font" val="Helvetica plain 16"/>
+      <a name="text" val="Overflow 2 (Complemento de 2)"/>
+      <a name="valign" val="top"/>
+    </comp>
+    <comp lib="8" loc="(73,27)" name="Text">
+      <a name="font" val="Helvetica plain 16"/>
+      <a name="text" val="A - B = A + ~B + 1"/>
+      <a name="valign" val="top"/>
+    </comp>
+    <comp lib="8" loc="(80,78)" name="Text">
+      <a name="font" val="Helvetica plain 16"/>
+      <a name="text" val="OP = 0 -&gt; 00000000"/>
+      <a name="valign" val="top"/>
+    </comp>
+    <comp lib="8" loc="(80,98)" name="Text">
+      <a name="font" val="Helvetica plain 16"/>
+      <a name="text" val="OP = 1 -&gt; 11111111"/>
+      <a name="valign" val="top"/>
+    </comp>
+    <comp loc="(350,180)" name="byte_adder"/>
+    <wire from="(150,180)" to="(170,180)"/>
+    <wire from="(170,110)" to="(170,180)"/>
+    <wire from="(170,110)" to="(180,110)"/>
+    <wire from="(170,180)" to="(220,180)"/>
+    <wire from="(180,110)" to="(190,110)"/>
+    <wire from="(190,110)" to="(200,110)"/>
+    <wire from="(200,110)" to="(210,110)"/>
+    <wire from="(210,110)" to="(220,110)"/>
+    <wire from="(220,110)" to="(230,110)"/>
+    <wire from="(220,180)" to="(220,250)"/>
+    <wire from="(220,180)" to="(310,180)"/>
+    <wire from="(220,250)" to="(390,250)"/>
+    <wire from="(230,110)" to="(240,110)"/>
+    <wire from="(250,90)" to="(280,90)"/>
+    <wire from="(260,70)" to="(280,70)"/>
+    <wire from="(300,130)" to="(320,130)"/>
+    <wire from="(320,130)" to="(320,160)"/>
+    <wire from="(320,220)" to="(330,220)"/>
+    <wire from="(320,80)" to="(340,80)"/>
+    <wire from="(330,200)" to="(330,220)"/>
+    <wire from="(340,80)" to="(340,160)"/>
+    <wire from="(350,170)" to="(390,170)"/>
+    <wire from="(350,190)" to="(370,190)"/>
+    <wire from="(370,190)" to="(370,230)"/>
+    <wire from="(370,190)" to="(390,190)"/>
+    <wire from="(370,230)" to="(390,230)"/>
+    <wire from="(430,180)" to="(440,180)"/>
+    <wire from="(430,240)" to="(440,240)"/>
+  </circuit>
+  <circuit name="byte_adder">
+    <a name="appearance" val="custom"/>
+    <a name="circuit" val="byte_adder"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <appear>
+      <rect fill="#a0a0a0" height="40" stroke="#000000" width="40" x="60" y="50"/>
+      <text dominant-baseline="central" font-family="Helvetica" font-size="12" text-anchor="middle" x="80" y="62">Byte</text>
+      <text dominant-baseline="central" font-family="Helvetica" font-size="12" text-anchor="middle" x="79" y="77">Adder</text>
+      <circ-anchor facing="east" x="100" y="70"/>
+      <circ-port dir="in" pin="140,440" x="70" y="50"/>
+      <circ-port dir="in" pin="140,470" x="90" y="50"/>
+      <circ-port dir="in" pin="220,60" x="60" y="70"/>
+      <circ-port dir="out" pin="280,420" x="100" y="60"/>
+      <circ-port dir="out" pin="280,480" x="100" y="80"/>
+      <circ-port dir="out" pin="290,80" x="80" y="90"/>
+    </appear>
+    <comp lib="0" loc="(140,440)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="A"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(140,470)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="B"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(150,440)" name="Splitter">
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
+      <a name="spacing" val="5"/>
+    </comp>
+    <comp lib="0" loc="(170,460)" name="Splitter">
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
+      <a name="spacing" val="5"/>
+    </comp>
+    <comp lib="0" loc="(220,60)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="south"/>
+      <a name="label" val="c0"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+    </comp>
+    <comp lib="0" loc="(270,80)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
+      <a name="spacing" val="5"/>
+    </comp>
+    <comp lib="0" loc="(280,420)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="c7"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(280,480)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="c8"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(290,80)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="S"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="output" val="true"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp loc="(240,140)" name="bit_adder"/>
+    <comp loc="(240,190)" name="bit_adder"/>
+    <comp loc="(240,240)" name="bit_adder"/>
+    <comp loc="(240,290)" name="bit_adder"/>
+    <comp loc="(240,340)" name="bit_adder"/>
+    <comp loc="(240,390)" name="bit_adder"/>
+    <comp loc="(240,440)" name="bit_adder"/>
+    <comp loc="(240,90)" name="bit_adder"/>
+    <wire from="(140,440)" to="(150,440)"/>
+    <wire from="(140,470)" to="(170,470)"/>
+    <wire from="(170,130)" to="(200,130)"/>
+    <wire from="(170,180)" to="(200,180)"/>
+    <wire from="(170,230)" to="(200,230)"/>
+    <wire from="(170,280)" to="(200,280)"/>
+    <wire from="(170,330)" to="(200,330)"/>
+    <wire from="(170,380)" to="(200,380)"/>
+    <wire from="(170,430)" to="(200,430)"/>
+    <wire from="(170,460)" to="(170,470)"/>
+    <wire from="(170,80)" to="(200,80)"/>
+    <wire from="(190,100)" to="(200,100)"/>
+    <wire from="(190,150)" to="(200,150)"/>
+    <wire from="(190,200)" to="(200,200)"/>
+    <wire from="(190,250)" to="(200,250)"/>
+    <wire from="(190,300)" to="(200,300)"/>
+    <wire from="(190,350)" to="(200,350)"/>
+    <wire from="(190,400)" to="(200,400)"/>
+    <wire from="(190,450)" to="(200,450)"/>
+    <wire from="(220,110)" to="(220,120)"/>
+    <wire from="(220,160)" to="(220,170)"/>
+    <wire from="(220,210)" to="(220,220)"/>
+    <wire from="(220,260)" to="(220,270)"/>
+    <wire from="(220,310)" to="(220,320)"/>
+    <wire from="(220,360)" to="(220,370)"/>
+    <wire from="(220,410)" to="(220,420)"/>
+    <wire from="(220,420)" to="(280,420)"/>
+    <wire from="(220,460)" to="(220,480)"/>
+    <wire from="(220,480)" to="(280,480)"/>
+    <wire from="(220,60)" to="(220,70)"/>
+    <wire from="(240,140)" to="(250,140)"/>
+    <wire from="(240,190)" to="(250,190)"/>
+    <wire from="(240,240)" to="(250,240)"/>
+    <wire from="(240,290)" to="(250,290)"/>
+    <wire from="(240,340)" to="(250,340)"/>
+    <wire from="(240,390)" to="(250,390)"/>
+    <wire from="(240,440)" to="(250,440)"/>
+    <wire from="(240,90)" to="(250,90)"/>
+    <wire from="(270,80)" to="(290,80)"/>
+  </circuit>
+  <circuit name="bit_adder">
+    <a name="appearance" val="custom"/>
+    <a name="circuit" val="bit_adder"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <appear>
+      <rect fill="#a0a0a0" height="40" stroke="#000000" width="40" x="50" y="40"/>
+      <text dominant-baseline="central" font-family="Helvetica" font-size="12" text-anchor="middle" x="70" y="68">Adder</text>
+      <text dominant-baseline="central" font-family="Helvetica" font-size="12" text-anchor="middle" x="70" y="53">Bit</text>
+      <circ-anchor facing="east" x="90" y="60"/>
+      <circ-port dir="in" pin="90,110" x="50" y="70"/>
+      <circ-port dir="in" pin="90,150" x="70" y="40"/>
+      <circ-port dir="in" pin="90,70" x="50" y="50"/>
+      <circ-port dir="out" pin="480,130" x="90" y="60"/>
+      <circ-port dir="out" pin="480,240" x="70" y="80"/>
+    </appear>
+    <comp lib="0" loc="(480,130)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="s"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(480,240)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="c_out"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(90,110)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="b"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+    </comp>
+    <comp lib="0" loc="(90,150)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="c_in"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+    </comp>
+    <comp lib="0" loc="(90,70)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="a"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+    </comp>
+    <comp lib="1" loc="(250,90)" name="XOR Gate"/>
+    <comp lib="1" loc="(350,200)" name="AND Gate"/>
+    <comp lib="1" loc="(350,280)" name="AND Gate"/>
+    <comp lib="1" loc="(360,130)" name="XOR Gate"/>
+    <comp lib="1" loc="(470,240)" name="OR Gate"/>
+    <comp lib="8" loc="(480,59)" name="Text">
+      <a name="font" val="Helvetica plain 16"/>
+      <a name="text" val="s = (a ⊻ b) ⊻ c_in"/>
+    </comp>
+    <comp lib="8" loc="(501,80)" name="Text">
+      <a name="font" val="Helvetica plain 16"/>
+      <a name="text" val="c_out = ((a ⊻ b) ∧ c_in) ∨ (a ∧ b)"/>
+    </comp>
+    <wire from="(120,110)" to="(120,300)"/>
+    <wire from="(120,110)" to="(190,110)"/>
+    <wire from="(120,300)" to="(300,300)"/>
+    <wire from="(160,260)" to="(300,260)"/>
+    <wire from="(160,70)" to="(160,260)"/>
+    <wire from="(160,70)" to="(190,70)"/>
+    <wire from="(230,150)" to="(230,220)"/>
+    <wire from="(230,150)" to="(300,150)"/>
+    <wire from="(230,220)" to="(300,220)"/>
+    <wire from="(250,90)" to="(270,90)"/>
+    <wire from="(270,110)" to="(270,180)"/>
+    <wire from="(270,110)" to="(300,110)"/>
+    <wire from="(270,180)" to="(300,180)"/>
+    <wire from="(270,90)" to="(270,110)"/>
+    <wire from="(350,200)" to="(370,200)"/>
+    <wire from="(350,280)" to="(370,280)"/>
+    <wire from="(360,130)" to="(480,130)"/>
+    <wire from="(370,200)" to="(370,220)"/>
+    <wire from="(370,220)" to="(420,220)"/>
+    <wire from="(370,260)" to="(370,280)"/>
+    <wire from="(370,260)" to="(420,260)"/>
+    <wire from="(470,240)" to="(480,240)"/>
+    <wire from="(90,110)" to="(120,110)"/>
+    <wire from="(90,150)" to="(230,150)"/>
+    <wire from="(90,70)" to="(160,70)"/>
+  </circuit>
+  <circuit name="comp">
+    <a name="appearance" val="custom"/>
+    <a name="circuit" val="comp"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <appear>
+      <rect fill="#404040" height="120" stroke="#000000" width="60" x="50" y="50"/>
+      <text dominant-baseline="central" fill="#c0c0c0" font-family="Helvetica" font-size="14" text-anchor="middle" x="81" y="77">Comp</text>
+      <circ-anchor facing="east" x="110" y="60"/>
+      <circ-port dir="in" pin="110,50" x="50" y="60"/>
+      <circ-port dir="in" pin="110,70" x="50" y="80"/>
+      <circ-port dir="out" pin="230,100" x="110" y="80"/>
+      <circ-port dir="out" pin="230,120" x="110" y="160"/>
+      <circ-port dir="out" pin="230,160" x="110" y="100"/>
+      <circ-port dir="out" pin="230,210" x="110" y="120"/>
+      <circ-port dir="out" pin="230,50" x="110" y="60"/>
+      <circ-port dir="out" pin="230,70" x="110" y="140"/>
+    </appear>
+    <comp lib="0" loc="(110,50)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="A"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(110,70)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="B"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(160,220)" name="Constant">
+      <a name="value" val="0x0"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(230,100)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="c1"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(230,120)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="c5"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(230,160)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="c2"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(230,210)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="c3"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(230,50)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="c0"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(230,70)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="c4"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp loc="(200,130)" name="less_than"/>
+    <comp loc="(220,160)" name="equals"/>
+    <comp loc="(220,210)" name="equals"/>
+    <comp loc="(220,60)" name="greater_than"/>
+    <wire from="(110,50)" to="(130,50)"/>
+    <wire from="(110,70)" to="(140,70)"/>
+    <wire from="(130,200)" to="(180,200)"/>
+    <wire from="(130,50)" to="(130,200)"/>
+    <wire from="(130,50)" to="(150,50)"/>
+    <wire from="(140,170)" to="(180,170)"/>
+    <wire from="(140,70)" to="(140,170)"/>
+    <wire from="(140,70)" to="(160,70)"/>
+    <wire from="(150,150)" to="(180,150)"/>
+    <wire from="(150,50)" to="(150,150)"/>
+    <wire from="(150,50)" to="(170,50)"/>
+    <wire from="(160,120)" to="(180,120)"/>
+    <wire from="(160,220)" to="(180,220)"/>
+    <wire from="(160,70)" to="(160,120)"/>
+    <wire from="(160,70)" to="(180,70)"/>
+    <wire from="(170,100)" to="(180,100)"/>
+    <wire from="(170,50)" to="(170,100)"/>
+    <wire from="(170,50)" to="(180,50)"/>
+    <wire from="(220,100)" to="(230,100)"/>
+    <wire from="(220,120)" to="(230,120)"/>
+    <wire from="(220,160)" to="(230,160)"/>
+    <wire from="(220,210)" to="(230,210)"/>
+    <wire from="(220,50)" to="(230,50)"/>
+    <wire from="(220,70)" to="(230,70)"/>
+  </circuit>
+  <circuit name="greater_than">
+    <a name="appearance" val="custom"/>
+    <a name="circuit" val="greater_than"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <appear>
+      <rect fill="#404040" height="40" stroke="#000000" width="40" x="50" y="50"/>
+      <text dominant-baseline="central" fill="#c0c0c0" font-family="Helvetica" font-size="14" text-anchor="middle" x="70" y="71">A&gt;B</text>
+      <circ-anchor facing="east" x="90" y="70"/>
+      <circ-port dir="in" pin="140,120" x="50" y="80"/>
+      <circ-port dir="in" pin="140,50" x="50" y="60"/>
+      <circ-port dir="out" pin="350,110" x="90" y="80"/>
+      <circ-port dir="out" pin="350,70" x="90" y="60"/>
+    </appear>
+    <comp lib="0" loc="(140,120)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="B"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(140,50)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="A"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(350,110)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="AgtB2"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(350,70)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="AgtB1"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="1" loc="(260,100)" name="NOT Gate"/>
+    <comp lib="1" loc="(260,120)" name="NOT Gate"/>
+    <comp lib="1" loc="(260,60)" name="NOT Gate"/>
+    <comp lib="1" loc="(340,110)" name="AND Gate">
+      <a name="size" val="30"/>
+    </comp>
+    <comp lib="1" loc="(340,70)" name="AND Gate">
+      <a name="size" val="30"/>
+    </comp>
+    <comp lib="8" loc="(186,170)" name="Text">
+      <a name="font" val="Helvetica plain 16"/>
+      <a name="text" val="A &gt; B ⇔ ¬ (A &lt; B) ∧ ¬ (A == B)"/>
+    </comp>
+    <comp loc="(200,130)" name="less_than"/>
+    <comp loc="(220,60)" name="equals"/>
+    <wire from="(140,120)" to="(160,120)"/>
+    <wire from="(140,50)" to="(170,50)"/>
+    <wire from="(160,120)" to="(180,120)"/>
+    <wire from="(160,70)" to="(160,120)"/>
+    <wire from="(160,70)" to="(180,70)"/>
+    <wire from="(170,100)" to="(180,100)"/>
+    <wire from="(170,50)" to="(170,100)"/>
+    <wire from="(170,50)" to="(180,50)"/>
+    <wire from="(200,120)" to="(210,120)"/>
+    <wire from="(220,100)" to="(230,100)"/>
+    <wire from="(220,120)" to="(230,120)"/>
+    <wire from="(220,60)" to="(230,60)"/>
+    <wire from="(260,100)" to="(270,100)"/>
+    <wire from="(260,120)" to="(310,120)"/>
+    <wire from="(260,60)" to="(280,60)"/>
+    <wire from="(270,80)" to="(270,100)"/>
+    <wire from="(270,80)" to="(310,80)"/>
+    <wire from="(280,100)" to="(310,100)"/>
+    <wire from="(280,60)" to="(280,100)"/>
+    <wire from="(280,60)" to="(310,60)"/>
+    <wire from="(340,110)" to="(350,110)"/>
+    <wire from="(340,70)" to="(350,70)"/>
+  </circuit>
+  <circuit name="equals">
+    <a name="appearance" val="custom"/>
+    <a name="circuit" val="equals"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <appear>
+      <rect fill="#404040" height="40" stroke="#000000" width="40" x="50" y="50"/>
+      <text dominant-baseline="central" fill="#c0c0c0" font-family="Helvetica" font-size="14" text-anchor="middle" x="70" y="71">A==B</text>
+      <circ-anchor facing="east" x="90" y="70"/>
+      <circ-port dir="in" pin="140,110" x="50" y="80"/>
+      <circ-port dir="in" pin="140,50" x="50" y="60"/>
+      <circ-port dir="out" pin="330,80" x="90" y="70"/>
+    </appear>
+    <comp lib="0" loc="(140,110)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="B"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(140,50)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="A"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(330,80)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="AeqB"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="1" loc="(310,80)" name="AND Gate">
+      <a name="negate0" val="true"/>
+      <a name="negate1" val="true"/>
+    </comp>
+    <comp lib="8" loc="(166,180)" name="Text">
+      <a name="font" val="Helvetica plain 16"/>
+      <a name="text" val="A == B ⇔ ¬ (A &lt; B) ∧ ¬ (B &lt; A)"/>
+    </comp>
+    <comp loc="(200,140)" name="less_than"/>
+    <comp loc="(200,80)" name="less_than"/>
+    <wire from="(140,110)" to="(170,110)"/>
+    <wire from="(140,50)" to="(160,50)"/>
+    <wire from="(160,130)" to="(180,130)"/>
+    <wire from="(160,50)" to="(160,130)"/>
+    <wire from="(160,50)" to="(180,50)"/>
+    <wire from="(170,110)" to="(180,110)"/>
+    <wire from="(170,70)" to="(170,110)"/>
+    <wire from="(170,70)" to="(180,70)"/>
+    <wire from="(220,110)" to="(230,110)"/>
+    <wire from="(220,50)" to="(230,50)"/>
+    <wire from="(230,100)" to="(230,110)"/>
+    <wire from="(230,100)" to="(250,100)"/>
+    <wire from="(230,50)" to="(230,60)"/>
+    <wire from="(230,60)" to="(250,60)"/>
+    <wire from="(310,80)" to="(330,80)"/>
+  </circuit>
+  <circuit name="less_than">
+    <a name="appearance" val="custom"/>
+    <a name="circuit" val="less_than"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <appear>
+      <rect fill="#404040" height="40" stroke="#000000" width="40" x="50" y="50"/>
+      <text dominant-baseline="central" fill="#c0c0c0" font-family="SansSerif" font-size="14" text-anchor="middle" x="70" y="69">A&lt;B</text>
+      <circ-anchor facing="east" x="70" y="90"/>
+      <circ-port dir="in" pin="110,470" x="50" y="60"/>
+      <circ-port dir="in" pin="110,500" x="50" y="80"/>
+      <circ-port dir="out" pin="480,120" x="90" y="80"/>
+      <circ-port dir="out" pin="480,160" x="90" y="60"/>
+    </appear>
+    <comp lib="0" loc="(110,470)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="A"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(110,500)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="B"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(120,490)" name="Splitter">
+      <a name="bit0" val="7"/>
+      <a name="bit1" val="6"/>
+      <a name="bit2" val="5"/>
+      <a name="bit3" val="4"/>
+      <a name="bit4" val="3"/>
+      <a name="bit5" val="2"/>
+      <a name="bit6" val="1"/>
+      <a name="bit7" val="0"/>
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
+      <a name="spacing" val="5"/>
+    </comp>
+    <comp lib="0" loc="(160,470)" name="Splitter">
+      <a name="bit0" val="7"/>
+      <a name="bit1" val="6"/>
+      <a name="bit2" val="5"/>
+      <a name="bit3" val="4"/>
+      <a name="bit4" val="3"/>
+      <a name="bit5" val="2"/>
+      <a name="bit6" val="1"/>
+      <a name="bit7" val="0"/>
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
+      <a name="spacing" val="5"/>
+    </comp>
+    <comp lib="0" loc="(220,90)" name="Constant">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="0" loc="(480,120)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="AltBs"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(480,160)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="AltBu"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="1" loc="(290,50)" name="XOR Gate">
+      <a name="size" val="30"/>
+    </comp>
+    <comp lib="1" loc="(390,160)" name="OR Gate">
+      <a name="inputs" val="8"/>
+      <a name="size" val="70"/>
+    </comp>
+    <comp lib="1" loc="(470,120)" name="XOR Gate">
+      <a name="size" val="30"/>
+    </comp>
+    <comp lib="8" loc="(543,91)" name="Text">
+      <a name="font" val="Helvetica plain 16"/>
+      <a name="text" val="se o sinal de A e B são diferentes."/>
+    </comp>
+    <comp lib="8" loc="(565,72)" name="Text">
+      <a name="font" val="Helvetica plain 16"/>
+      <a name="text" val="Inverte o resultado de A &lt; B (Sem Sinal)"/>
+    </comp>
+    <comp loc="(240,120)" name="bit_comparer"/>
+    <comp loc="(240,170)" name="bit_comparer"/>
+    <comp loc="(240,220)" name="bit_comparer"/>
+    <comp loc="(240,270)" name="bit_comparer"/>
+    <comp loc="(240,320)" name="bit_comparer"/>
+    <comp loc="(240,370)" name="bit_comparer"/>
+    <comp loc="(240,420)" name="bit_comparer"/>
+    <comp loc="(240,470)" name="bit_comparer"/>
+    <wire from="(110,470)" to="(160,470)"/>
+    <wire from="(110,500)" to="(120,500)"/>
+    <wire from="(120,490)" to="(120,500)"/>
+    <wire from="(140,130)" to="(200,130)"/>
+    <wire from="(140,180)" to="(200,180)"/>
+    <wire from="(140,230)" to="(200,230)"/>
+    <wire from="(140,280)" to="(200,280)"/>
+    <wire from="(140,330)" to="(200,330)"/>
+    <wire from="(140,380)" to="(200,380)"/>
+    <wire from="(140,40)" to="(140,130)"/>
+    <wire from="(140,40)" to="(250,40)"/>
+    <wire from="(140,430)" to="(200,430)"/>
+    <wire from="(140,480)" to="(200,480)"/>
+    <wire from="(180,110)" to="(200,110)"/>
+    <wire from="(180,160)" to="(200,160)"/>
+    <wire from="(180,210)" to="(200,210)"/>
+    <wire from="(180,260)" to="(200,260)"/>
+    <wire from="(180,310)" to="(200,310)"/>
+    <wire from="(180,360)" to="(200,360)"/>
+    <wire from="(180,410)" to="(200,410)"/>
+    <wire from="(180,460)" to="(200,460)"/>
+    <wire from="(180,60)" to="(180,110)"/>
+    <wire from="(180,60)" to="(250,60)"/>
+    <wire from="(220,140)" to="(220,150)"/>
+    <wire from="(220,190)" to="(220,200)"/>
+    <wire from="(220,240)" to="(220,250)"/>
+    <wire from="(220,290)" to="(220,300)"/>
+    <wire from="(220,340)" to="(220,350)"/>
+    <wire from="(220,390)" to="(220,400)"/>
+    <wire from="(220,440)" to="(220,450)"/>
+    <wire from="(220,90)" to="(220,100)"/>
+    <wire from="(240,120)" to="(320,120)"/>
+    <wire from="(240,170)" to="(250,170)"/>
+    <wire from="(240,220)" to="(260,220)"/>
+    <wire from="(240,270)" to="(270,270)"/>
+    <wire from="(240,320)" to="(280,320)"/>
+    <wire from="(240,370)" to="(290,370)"/>
+    <wire from="(240,420)" to="(300,420)"/>
+    <wire from="(240,470)" to="(310,470)"/>
+    <wire from="(250,130)" to="(250,170)"/>
+    <wire from="(250,130)" to="(320,130)"/>
+    <wire from="(260,140)" to="(260,220)"/>
+    <wire from="(260,140)" to="(320,140)"/>
+    <wire from="(270,150)" to="(270,270)"/>
+    <wire from="(270,150)" to="(320,150)"/>
+    <wire from="(280,170)" to="(280,320)"/>
+    <wire from="(280,170)" to="(320,170)"/>
+    <wire from="(290,180)" to="(290,370)"/>
+    <wire from="(290,180)" to="(320,180)"/>
+    <wire from="(290,50)" to="(410,50)"/>
+    <wire from="(300,190)" to="(300,420)"/>
+    <wire from="(300,190)" to="(320,190)"/>
+    <wire from="(310,200)" to="(310,470)"/>
+    <wire from="(310,200)" to="(320,200)"/>
+    <wire from="(390,160)" to="(410,160)"/>
+    <wire from="(410,110)" to="(430,110)"/>
+    <wire from="(410,130)" to="(410,160)"/>
+    <wire from="(410,130)" to="(430,130)"/>
+    <wire from="(410,160)" to="(480,160)"/>
+    <wire from="(410,50)" to="(410,110)"/>
+    <wire from="(470,120)" to="(480,120)"/>
+  </circuit>
+  <circuit name="bit_comparer">
+    <a name="appearance" val="custom"/>
+    <a name="circuit" val="bit_comparer"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <appear>
+      <rect fill="#404040" height="40" stroke="#000000" width="40" x="50" y="50"/>
+      <text dominant-baseline="central" fill="#c0c0c0" font-family="Helvetica" font-size="14" text-anchor="middle" x="70" y="72">a&lt;b</text>
+      <circ-anchor facing="east" x="90" y="70"/>
+      <circ-port dir="in" pin="90,110" x="50" y="80"/>
+      <circ-port dir="in" pin="90,180" x="70" y="50"/>
+      <circ-port dir="in" pin="90,60" x="50" y="60"/>
+      <circ-port dir="out" pin="270,80" x="90" y="70"/>
+      <circ-port dir="out" pin="310,160" x="70" y="90"/>
+    </appear>
+    <comp lib="0" loc="(270,80)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="altb"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(310,160)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="en_out"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(90,110)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="b"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+    </comp>
+    <comp lib="0" loc="(90,180)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="en_in"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+    </comp>
+    <comp lib="0" loc="(90,60)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="a"/>
+      <a name="labelfont" val="Helvetica plain 14"/>
+    </comp>
+    <comp lib="1" loc="(230,140)" name="XNOR Gate">
+      <a name="size" val="30"/>
+    </comp>
+    <comp lib="1" loc="(230,80)" name="AND Gate">
+      <a name="inputs" val="3"/>
+      <a name="negate0" val="true"/>
+    </comp>
+    <comp lib="1" loc="(290,160)" name="AND Gate"/>
+    <wire from="(120,110)" to="(120,150)"/>
+    <wire from="(120,150)" to="(180,150)"/>
+    <wire from="(120,80)" to="(120,110)"/>
+    <wire from="(120,80)" to="(180,80)"/>
+    <wire from="(140,100)" to="(140,180)"/>
+    <wire from="(140,100)" to="(180,100)"/>
+    <wire from="(140,180)" to="(240,180)"/>
+    <wire from="(160,130)" to="(180,130)"/>
+    <wire from="(160,60)" to="(160,130)"/>
+    <wire from="(160,60)" to="(170,60)"/>
+    <wire from="(230,140)" to="(240,140)"/>
+    <wire from="(230,80)" to="(270,80)"/>
+    <wire from="(290,160)" to="(310,160)"/>
+    <wire from="(90,110)" to="(120,110)"/>
+    <wire from="(90,180)" to="(140,180)"/>
+    <wire from="(90,60)" to="(160,60)"/>
+  </circuit>
+</project>
